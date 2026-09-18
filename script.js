@@ -7,13 +7,13 @@ const getSum = () => {
 	let prices = document.querySelectorAll(".prices"); 
 	let total=0;
 	for(let price of prices){
-		total = total + Number(price.innertext);
+		total = total + Number(price.innerText);
 	}
-	let row = doucment.createElement("tr");
-	let cell = doucment.createElement("td");
-	cell.inner=total;
+	let row = document.createElement("tr");
+	let cell = document.createElement("td");
+	cell.innerText = total;
 	row.appendChild("cell");
-	doucment.querySelector("table").appendChild("row");
+	document.querySelector("table").appendChild("row");
 };
 
 getSumBtn.addEventListener("click", getSum);
